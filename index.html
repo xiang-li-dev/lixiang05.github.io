@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李想 - 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #bbdefb);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #1a237e;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        .subtitle {
+            color: #5c6bc0;
+            font-size: 1.3rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(41, 98, 255, 0.15);
+            padding: 40px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .info-item {
+            background: #f5f7ff;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 4px solid #5c6bc0;
+        }
+        .info-item h3 {
+            color: #1a237e;
+            margin-bottom: 8px;
+        }
+        .info-item p {
+            color: #37474f;
+            font-size: 1.1rem;
+        }
+        .highlight {
+            color: #d32f2f;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #455a64;
+            font-style: italic;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>李想</h1>
+            <p class="subtitle">人工智能探索者 | 东北农业大学</p >
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>👩‍💻 基本信息</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>性别</h3>
+                        <p><span class="highlight">女</span></p >
+                    </div>
+                    <div class="info-item">
+                        <h3>出生年份</h3>
+                        <p><span class="highlight">2005年</span></p >
+                    </div>
+                    <div class="info-item">
+                        <h3>教育背景</h3>
+                        <p><span class="highlight">东北农业大学</span><br>人工智能专业在读</p >
+                    </div>
+                    <div class="info-item">
+                        <h3>技术方向</h3>
+                        <p>机器学习 · 深度学习 · 算法设计</p >
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🌟 个人宣言</h2>
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-top: 15px;">
+                    " 在人工智能的星辰大海中，我愿做永不停歇的探索者。<br>
+                    用代码解构世界，以算法丈量未来。<br>
+                    期待与志同道合者共同推动智能科技的发展！"
+                </p >
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 李想的个人主页 | 更新于 GitHub</p >
+        </footer>
+    </div>
+</body>
+</html>
